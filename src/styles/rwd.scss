@@ -1,0 +1,17 @@
+$breakpoints: (
+  mobile: 40em,
+  tablet: 48em,
+  desktop: 72em,
+  desktop-big: 96em,
+  desktop-large: 128em
+);
+
+// Mixin to write more consistent media-queries
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

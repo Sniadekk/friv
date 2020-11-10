@@ -1,0 +1,23 @@
+// Common styles mixins and variables
+@import "./variables.scss";
+@import "./normalize";
+@import "./rwd.scss";
+@import "./typography.scss";
+@import "./containers.scss";
+
+// Components
+@import "../components/select/select.scss";
+@import "../components/loader/loader.scss";
+@import "../components/list/list.scss";
+@import "../components/button/button.scss";
+@import "../components/network-error/network-error.scss";
+@import "../components/lang-switcher/lang-switcher.scss";
+
+// Pages
+
+// Homepage
+@import "../pages/homepage/vehicle/vehicle.scss";
+@import "../pages/homepage/selector/selector.scss";
+@import "../pages/homepage/homepage.scss";
+
+@include normalize();

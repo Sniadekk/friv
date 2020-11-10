@@ -1,0 +1,78 @@
+.vehicle {
+  border: 2px solid $PURPLE;
+  margin-bottom: em(32);
+  border-radius: $BORDER_RADIUS;
+  width: 100%;
+  @include rubik-font;
+
+  padding: em(16) 0;
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $BUTTON_PADDING;
+  }
+
+  &__label,
+  &__value {
+    width: 100%;
+  }
+
+  &__label {
+    font-weight: 500;
+    padding-bottom: em(4);
+    border-bottom: 2px solid $PURPLE;
+  }
+
+  &__value {
+    padding-top: em(4);
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: $BUTTON_PADDING;
+  }
+
+  &__select {
+    color: $YELLOW;
+  }
+
+  @include mq(tablet) {
+    width: 45%;
+  }
+
+  @include mq(desktop) {
+    width: 30%;
+  }
+
+  @include mq(desktop-big) {
+    width: 22.5%;
+  }
+
+  @include mq(desktop-large) {
+    width: 18%;
+  }
+}
+
+.vehicles {
+  &__available {
+    text-align: center;
+    @include rubik-font;
+  }
+}
+
+.selected-vehicle {
+  @include rubik-font;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__title {
+    text-align: center;
+    padding: em(32) 0;
+    width: 100%;
+  }
+}

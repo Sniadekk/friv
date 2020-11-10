@@ -1,0 +1,36 @@
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels / $context}em;
+}
+
+@mixin rubik-font {
+  font-family: "Rubik", sans-serif;
+}
+
+@mixin small-font {
+  font-size: 1em;
+}
+
+@mixin medium-font {
+  font-size: 1.2em;
+}
+
+@mixin big-font {
+  font-size: 1.4em;
+}
+
+p,
+h1,
+h2 {
+  @include rubik-font();
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+  @include medium-font;
+}

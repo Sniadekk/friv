@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+
+  @include rubik-font;
+  @include medium-font;
+
+  background-color: $PURPLE;
+  border-radius: 100px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  padding: em(4) em(8);
+  min-width: em(32);
+
+  &:hover {
+    background-color: rgba($PURPLE, 0.9);
+  }
+
+  &__disabled {
+    pointer-events: none;
+    background-color: rgba($PURPLE, 0.6);
+  }
+}

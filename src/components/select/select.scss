@@ -1,0 +1,41 @@
+.select {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: $BUTTON_MEDIUM;
+    border-color: $PURPLE;
+  }
+
+  &__options,
+  &__input {
+    border-radius: $BORDER_RADIUS;
+  }
+
+  &__options {
+    background-color: $WHITE;
+    position: absolute;
+    width: 100%;
+    border: 2px solid $PURPLE;
+    margin-top: em(8);
+    max-height: em(225);
+    overflow-y: scroll;
+    display: none;
+    z-index: 2;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &__option,
+  &__input,
+  &__empty {
+    padding: $BUTTON_PADDING;
+    @include rubik-font;
+  }
+
+  &__option:hover {
+    background-color: rgba($PURPLE, $alpha: 0.1);
+  }
+}

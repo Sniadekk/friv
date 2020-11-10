@@ -1,0 +1,8 @@
+.lang-switcher {
+  display: flex;
+  justify-content: center;
+
+  &__variant {
+    padding: em(16) em(8);
+  }
+}

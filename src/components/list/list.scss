@@ -1,0 +1,38 @@
+.list {
+  @include rubik-font;
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    color: $WHITE;
+
+    &--active {
+      color: $YELLOW;
+    }
+
+    @include mq(tablet) {
+      margin: 0 em(4);
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(tablet) {
+      justify-content: space-between;
+    }
+  }
+}

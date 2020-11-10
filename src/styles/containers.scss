@@ -1,0 +1,20 @@
+// Button heights
+
+$BUTTON_BIG: em(60);
+$BUTTON_MEDIUM: em(42);
+$BUTTON_SMALL: em(24);
+
+// Paddings
+$BUTTON_PADDING: em(8) em(16);
+
+@mixin bodyOffset {
+  padding: 0 5%;
+
+  @include mq(tablet) {
+    padding: 0 10%;
+  }
+
+  @include mq(desktop) {
+    padding: 0 20%;
+  }
+}

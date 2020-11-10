@@ -1,0 +1,12 @@
+.selector {
+  margin-top: em(32);
+
+  &__title {
+    text-align: center;
+  }
+
+  @include mq(tablet) {
+    max-width: em(400);
+    margin: auto;
+  }
+}

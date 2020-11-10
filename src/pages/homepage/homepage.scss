@@ -1,0 +1,9 @@
+.homepage {
+  @include bodyOffset;
+
+  padding-bottom: em(160);
+
+  &__header {
+    text-align: center;
+  }
+}
