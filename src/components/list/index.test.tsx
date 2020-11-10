@@ -18,7 +18,7 @@ jest.mock("react-i18next", () => ({
 test("List renders correct number of list items", () => {
   const items = ["foo", "bar", "foo", "bar", "foo", "bar"];
 
-  const { container } = render(
+  render(
     <List
       items={items}
       renderItem={(value, index) => <div key={index}>LIST ITEM</div>}

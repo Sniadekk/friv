@@ -55,6 +55,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+# How to setup?
+
+In order to setup the project firstly clone it from my Github profile `https://github.com/Sniadekk/friv.git` and the run `yarn` or `npm install` to install the dependencies.
+
 # 3rd party libraries
 
 - SCSS, makes style much more easier
@@ -69,7 +73,7 @@ This simple application lets you choose a car for a given brand and model. We se
 
 # Tests
 
-There are few unit tests for the utilities and the List component done using Jest and React testing library.
+There are few unit tests for the utilities and the List component done using Jest and React testing library. Of course there is more functionality to test than the tests cover, but I wasn't able to spend so much time on this project.
 
 # Git hook
 
